@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Smart media launcher</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+        <style>
+            html,body{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                margin: 0;
+                min-height: 180px;
+                padding: 0;
+                width: 380px;
+            }
+
+            h1{
+                font-family: 'Menlo', monospace;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: blue;
+            }
+
+            a:link, a:visited{
+                color: black;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            img {
+                width: 30px;
+
+            }
+
+            .modal-header{
+                align-items: center;
+                border-bottom: 0.5px solid white;
+
+            }
+
+            .modal-content{
+                padding: 0 22px;
+            }
+
+            .modal-icons{
+                border-top: 0.5px solid white;
+                height: 50px;
+                width: 100%;
+            }
+            .logo{
+                padding: 16px;
+            }
+            .logo-icon{
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+            .version{
+                color: darkgray;
+                font-size: 18px;
+            }
+            .flex-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 22px;
+            }
+            .flex{
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+            .flex:hover{
+                opacity: 0.4;
+            }
+            .flex .fa{
+                font-size: 40px;
+                color: darkslateblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img src="smart_launcher/images/icon_150.png" alt="Smart media launcher" class="logo-icon" >
+                Smart Media Launcher <span class="version">(1.0.0)</span>
+            </h1>
+        </div>
+        <div class="modal-content">
+            <p>Easily access Media launcher</p>
+        </div>
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                    <a href="https://www.facebook.com/profile.php?id=100012116147720" target="_blank" >
+                    <i class="fa fa-facebook"></i>
+                </a>
+                </div>
+                <div class="flex">
+                    <a href="https://www.instagram.com/yashsingh724/" target="_blank" >
+                    <i class="fa fa-instagram"></i>
+                </a>
+                </div>
+                <div class="flex">
+                    <a href="https://github.com/YashSingh-279" target="_blank" >
+                    <i class="fa fa-github"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
